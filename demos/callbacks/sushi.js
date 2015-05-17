@@ -1,3 +1,5 @@
+// Synchronous
+
 function randomPerson() {
 	var people = ["Tom", "Susan", "Jane"];
 	return people[Math.floor(Math.random() * people.length)];
