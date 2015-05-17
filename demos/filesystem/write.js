@@ -8,3 +8,12 @@ fs.writeFile(__dirname + "/dog.txt", "woof!", {
 	}
 	console.log("file saved!");
 });
+
+
+// for reading files synchronously
+
+// try {
+// 	var output = fs.readFileSync(path);
+// } catch (err) {
+//
+// }

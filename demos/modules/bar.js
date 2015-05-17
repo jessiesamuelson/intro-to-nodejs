@@ -9,8 +9,3 @@ module.exports = Date.now();
 module.exports = function(){
   return Date.now();
 }
-=======
-module.exports = function() {
-	return Date.now();
-}
-

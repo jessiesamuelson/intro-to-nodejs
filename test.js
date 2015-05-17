@@ -8,6 +8,7 @@ console.log("hello world!");
 
 function speak(message){
 	console.log(message);
+	return "Spencer";
 }
 
 var person = "Spencer";

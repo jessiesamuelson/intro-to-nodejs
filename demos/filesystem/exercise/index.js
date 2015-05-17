@@ -13,3 +13,35 @@
 
 // HINT: In JS you can reference a linebreak with "\t"
 // so "some text\t" is the line "some text" followed by a linebreak
+
+var fs = require("fs");
+var toRoman = require("roman-numerals").toRoman;
+var path = require("path");
+
+fs.readFile(path.resolve(__dirname + "/sonnets.txt"), {
+	encoding: "utf-8"
+}, function(err, data) {
+	if (err) {
+		return console.log(err);
+	}
+	// return console.log(data);
+  var sonnets = data.split("---\n");
+  // console.log(sonnets[0])
+
+  for (var i = 0; i < sonnets.length; i++){
+    fs.writeFile(__dirname + "/sonnets/" + "sonnet" + toRoman(i) + ".txt", sonnets[i], function() {
+      console.log("file saved!");
+    });
+  }
+});
+
+
+// fs.mkdir('/something/', function(e){
+// 	if(!e || (e && e.code === 'EEXIST')){
+// 			//do something with contents
+// 			console.log(e)
+// 	} else {
+// 			//debug
+// 			console.log(e);
+// 	}
+// });

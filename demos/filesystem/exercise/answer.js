@@ -7,6 +7,8 @@ fs.readFile(__dirname + "/sonnets.txt", {
 }, function(err, text) {
 	// inside the callback split the text into an array at the breaks;
 	var sonnets = text.split("---\n");
+	// console.log(sonnets[0])
+
 	// loop over the array
 	for (var i = 0; i < sonnets.length; i++) {
 		//save each sonnet as its own file
