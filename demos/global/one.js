@@ -6,3 +6,5 @@ console.log(global.localVar);
 console.log("Evaluating globalVar:");
 console.log(global.globalVar);
 console.log("end one.js");
+
+global.globalVar = "foo";
