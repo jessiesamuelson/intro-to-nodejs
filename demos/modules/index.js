@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var foo = require("./foo");
 var bar = require("./bar");
 
@@ -10,6 +11,10 @@ var bar = require("./bar");
 console.log(foo);
 
 
+=======
+var bar = require("./bar");
+
+>>>>>>> b32e3cbd04bc48bf061a1c812ce87bc689bb2bb8
 function delay(time) {
 	var d1 = new Date();
 	var d2 = new Date();
@@ -18,7 +23,14 @@ function delay(time) {
 	}
 }
 
+<<<<<<< HEAD
 for (var i = 0; i < 5; i++){
 	console.log(bar());
 	delay(2000);
 }
+=======
+for (var i = 0; i < 5; i++) {
+	console.log(bar());
+	delay(2000);
+}
+>>>>>>> b32e3cbd04bc48bf061a1c812ce87bc689bb2bb8

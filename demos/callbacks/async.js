@@ -1,9 +1,17 @@
 // [i:Number:0][func:Function:code->i][func:Function:code->i]
 
 for (var i = 0; i < 10; i++) {
+
 	setTimeout(function() {
 		console.log(j);
 	}, 2000);
+	(function() {
+		var j = i;
+		setTimeout(function() {
+			console.log(j);
+		}, 2000);
+	})();
+ce87bc689bb2bb8
 }
 console.log("Last line");
 

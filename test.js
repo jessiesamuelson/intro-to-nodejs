@@ -1,3 +1,4 @@
+
 console.log("hello world!");
 
 
@@ -12,3 +13,7 @@ function speak(message){
 var person = "Spencer";
 
 speak("sup bitches");
+
+function speak(message) {
+	console.log(message);
+}

@@ -1,3 +1,4 @@
+
 // var moment = require("moment");
 console.log("executing Foo");
 module.exports = "Foo";
@@ -14,3 +15,7 @@ module.exports = "Foo";
 // module.exports = function() {
 // 	return Date.now();
 // };
+
+console.log("executing foo");
+
+module.exports = "Foo";
